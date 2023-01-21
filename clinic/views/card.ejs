@@ -1,0 +1,23 @@
+<div class="pricing-column col-lg-4 col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <%  details.forEach(function(detail){ %>
+      <!-- <h3>GENERAL PHYSICIAN</h3> -->
+      <h3><%=detail.category%></h3>
+    </div>
+    <div class="card-body">
+      <h2 class="price-text"><%= detail.name%</h2>
+      // <p>Unlimited Matches</p>
+
+      <p><%= detail.degree %></p>
+      <p><%= detail.reg %></p>
+
+
+
+
+        <% }) %>
+      <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+    </div>
+
+  </div>
+</div>

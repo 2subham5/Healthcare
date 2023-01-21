@@ -1,0 +1,158 @@
+<%- include('partials/header') %>
+  <div class="colored-section" id="title">
+
+    <div class="container-fluid ">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <a class="navbar-brand" href="">MEDLINE HEALTHCARE</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#title">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
+          </ul>
+
+
+        </div>
+      </nav>
+
+      <!-- <div class="heading"> -->
+        <!-- <h1>MEDLINE</h1> -->
+        <div class="container-fluid img-medline">
+          <img src="images/nav.jpg" alt="nav-img">
+          <div class="image2">
+            <img src="images/stetho.jpg" alt="nav-img">
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+  <div class=" white-section" id="pricing">
+
+    <h2 class="section-heading">Doctor's List</h2>
+    <p>We strive to provide better healthcare </p>
+
+    <div class="row">
+
+      <!-- <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>GENERAL PHYSICIAN</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Dr. SYED ZAHID</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>GENERAL PHYSICIAN</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>GENERAL PHYSICIAN</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+
+            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+
+          </div>
+        </div>
+      </div> -->
+<%  details.forEach(function(detail){ %>
+      <div class="pricing-column col-lg-4 col-md-6">
+
+        <div class="card">
+          <div class="card-header">
+
+
+            <h3><%=detail.category%></h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text"><%= detail.name%></h2>
+
+
+              <p><%= detail.degree %></p>
+              <p><%= detail.reg %></p>
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+      <% }) %>
+
+
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid niche">
+      <div class="contact-us">
+        <h1>CONTACT US</h1>
+        <h3>Phone No. :</h3>
+        <div class="phone">
+        <a href="tel: 8491017426">8491017426</a>
+        </div>
+        <div class="phone">
+        <a href="tel: 8825060493">8825060493</a>
+        </div>
+        <h3>Address</h3>
+        <p>KANCHAN GANDERBAL NEAR JAMA MASJID KASHMIR</p>
+      </div>
+      <!-- <i class="social-icon fab fa-facebook-f"></i> -->
+      <i class="social-icon fa-solid fa-phone"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+    <a href="mailto: medlinehealthcare2023@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
+      <i class="social-icon fa-brands fa-twitter"></i>
+      <p>© Copyright 2023</p>
+    </div>
+  </footer>
+
+<%- include('partials/footer') %>
